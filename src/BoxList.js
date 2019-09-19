@@ -30,9 +30,11 @@ class BoxList extends Component {
     return (
       <div>
         <NewBoxForm addItem={this.addItem}/>
-        {this.state.boxes.map(box => {
-          return <Box boxInfo={box} key={box.id} remove={this.remove}/>
-        })}
+        <div className="boxList">
+          {this.state.boxes.map(box => {
+            return <Box boxInfo={box} key={box.id} remove={this.remove}/>
+          })}
+        </div>
       </div>
     )
   }

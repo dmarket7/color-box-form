@@ -6,7 +6,7 @@ class Box extends Component {
 
 
     return (
-      <div style={{ width, height, backgroundColor }}>
+      <div style={{ width: `${width}px`, height: `${height}px`, backgroundColor }}>
         <button id={id} onClick={() => this.props.remove(id)}>X</button>
       </div>
     )
